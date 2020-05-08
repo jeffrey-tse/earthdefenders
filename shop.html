@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Earth Defenders - Shop</title>
+		<meta name="author" content="Team Earth Defenders" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" media="screen" href="css/default.css" />
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="js/shop_js.js"></script>
+		<script type="text/javascript" src="js/all_js.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="logoname" id="lnh">
+				<a href=index.html><img class="logo" src="img/earthdefenders_logo.png" /></a>
+				<a href=index.html><span id="sitename">EARTH<br>DEFENDERS</span></a>
+			</div>
+			<nav>
+				<ul>
+					<a href="facts.html"><li>Facts</li></a>
+					<a href="solutions.html"><li>Solutions</li></a>
+					<a href="join.html"><li>Join</li></a>
+					<a class="active" href="shop.html"><li>Shop</li></a>
+					<a href="quiz.html"><li>Quiz</li></a>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="shop hero">
+				<h2>SHOP EARTH DEFENDERS</h2>
+				<h3>Make a change.</h3>
+			</div>
+			<section class="content">
+				<div id="cart">
+					<img src="img/shopping-cart.png"/>
+					<p><strong>CART</strong></p>
+				</div>
+				<h3>SHOP FOR TREES</h3><br>
+				<h4>Want to plant a tree to help?</h4>
+				<p><strong>Make a purchase and we will plant it on behalf of you!</strong></p>
+				<div class="allshop">
+					<div class="shopitem"> 
+						<img src="img/small_tree.jpg"/>
+						<h3>Tree Sapling</h3>
+						<h4>&#36;20.00</h4>
+						<p class="itemdesc">You buy the seedling, we plant it for you. Specific breeds are planted throughout Canada based on the location, weather and conditions.
+						</p>
+						<button class="shop-btn" id="smalltree" type="button">ADD TO CART</button>
+					</div>
+					<div class="shopitem"> 
+						<img src="img/tree_gift.png"/>
+						<h3>Plant as a Gift</h3>
+						<h4>&#36;80.00</h4>
+						<p class="itemdesc">Planting a tree for your loved ones can be a meaningful gift. Leave the person’s e-mail address and a note. We will send a e-certificate to them!
+						</p>
+						<button class="shop-btn" id="gifttree" type="button">ADD TO CART</button>
+					</div>
+					<div class="shopitem"> 
+						<img src="img/grown_tree.jpg"/>
+						<h3>Grown Tree</h3>
+						<h4>&#36;50.00</h4>
+						<p class="itemdesc">We will plant a partially grown tree at the most deforested area with your purchase.
+						</p>
+						<button class="shop-btn" id="growntree" type="button">ADD TO CART</button>
+					</div>
+				</div><br>
+				<h3>SHOP FOR MERCH</h3><br>
+				<div class="allshop">
+					<div class="shopitem"> 
+						<img src="img/tshirt.jpg"/>
+						<h3>Earth Defenders T-Shirt</h3>
+						<h4>&#36;35.00</h4>
+						<p class="itemdesc">Our Earth Defenders T-shirt is made with eco-friendly and sustainable materials. This fashionable yet comfy shirt will signify your respect and devotion to our environment and planet.
+						</p>
+						<button class="shop-btn" id="tshirt" type="button">ADD TO CART</button>
+					</div>
+					<div class="shopitem"> 
+						<img src="img/totebag.jpg"/>
+						<h3>Earth Defenders Tote Bag</h3>
+						<h4>&#36;15.00</h4>
+						<p class="itemdesc">This long-lasting all-purpose bag is the best alternative to plastic bags. Simple design, light in weight, and high quality.
+						</p>
+						<button class="shop-btn" id="totebag" type="button">ADD TO CART</button>
+					</div>
+				</div>
+			</section>
+			<div class="popup">
+				<div class="popupcontent" id="shoppopup">
+					<span class="closepop">X</span>
+					<h3>Your Shopping Cart</h3>
+					<p id="noitems">There are currently no items in your cart.</p>
+					<div id="smalltree_sc">
+						<h4>Small Tree</h4>
+						<h5>&#36;<span id="price">20.00</span></h5>
+						<p id="remove"><small>(-) REMOVE</small></p>
+					</div>
+					<div id="gifttree_sc">
+						<h4>Plant As A Gift</h4>
+						<label>Send to: <input type="text" placeholder="E-mail of recipient"/></label><br>
+						<textarea placeholder="Add your personalized message"></textarea>
+						<h5>&#36;<span id="price">80.00</span></h5>
+						<p id="remove"><small>(-) REMOVE</small></p>
+					</div>
+					<div id="growntree_sc">
+						<h4>Grown Tree</h4>
+						<h5>&#36;<span id="price">50.00</span></h5>
+						<p id="remove"><small>(-) REMOVE</small></p>
+					</div>
+					<div id="tshirt_sc">
+						<h4>Earth Defenders T-Shirt</h4>
+						<h5>&#36;<span id="price">35.00</span></h5>
+						<p id="remove"><small>(-) REMOVE</small></p>
+					</div>
+					<div id="totebag_sc">
+						<h4>Earth Defenders Tote Bag</h4>
+						<h5>&#36;<span id="price">15.00</span></h5>
+						<p id="remove"><small>(-) REMOVE</small></p>
+					</div>
+					<br>
+					<h4>Total: <span id="totalprice">&#36;0.00</span></h4><br>
+					<button id="purchase">Purchase</button>
+					<p id="shopwarning">Cannot purchase! No items in cart</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="logoname">
+				<img class="logo" src="img/earthdefenders_logo.png" />
+				<span>EARTH<br>DEFENDERS</span>
+			</div>
+			<ul>
+				<li><a href="index.html">About Us</a></li>
+				<li><a href="facts.html">Facts</a></li>
+			</ul>
+			<ul>
+				<li><a href="solutions.html">Solutions</a></li>
+				<li><a href="join.html">Join</a></li>
+			</ul>
+			<ul>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+			<div class="footerright">
+				<span class="followus">Follow us on:</span><br>
+				<a target="_blank" href="https://www.instagram.com/join_earth_defenders/"><img class="smicon" src="img/sm_icons/Instagram_Logo.svg" /></a>
+				<img class="smicon" src="img/sm_icons/Twitter_Logo.svg" /><br>
+				<span class="copyright">Copyright &copy; Earth Defenders 2019</span>
+			</div>
+		</footer>
+	</body>
+</html>

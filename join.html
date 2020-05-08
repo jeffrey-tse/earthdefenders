@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Earth Defenders - Join</title>
+		<meta name="author" content="Team Earth Defenders" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" media="screen" href="css/default.css" />
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="js/join_js.js"></script>
+		<script type="text/javascript" src="js/all_js.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="logoname" id="lnh">
+				<a href=index.html><img class="logo" src="img/earthdefenders_logo.png" /></a>
+				<a href=index.html><span id="sitename">EARTH<br>DEFENDERS</span></a>
+			</div>
+			<nav>
+				<ul>
+					<a href="facts.html"><li>Facts</li></a>
+					<a href="solutions.html"><li>Solutions</li></a>
+					<a class="active" href="join.html"><li>Join</li></a>
+					<a href="shop.html"><li>Shop</li></a>
+					<a href="quiz.html"><li>Quiz</li></a>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="join hero">
+				<h2>JOIN EARTH DEFENDERS</h2>
+			</div>
+			<section id="jointop" class="content">
+				<div>
+					<h4>Who Are We</h4>
+					<p>Earth Defenders is a Canada-based non-profit organization that not only informs and educates people about the global warming issue, but also engages people to participate in the campaign.</p>
+					<h4>What We Do</h4>
+					<ul>
+						<li><strong>Educate</strong> people about global warming</li>
+						<li><strong>Advise</strong> people on how to make change</li>
+						<li><strong>Motivate</strong> people to take action</li>
+						<li><strong>Plant</strong> trees and organize volunteer works</li>
+						<li><strong>Unite</strong> people towards the fight against climate change</li>
+					</ul>
+					<h4>Become an Earth Defender</h4>
+					<ul>
+						<li>Get the latest news on global warming</li>
+						<li>Attend various events and meetings</li>
+						<li>Connect with others around the world</li>
+						<li>Participate in volunteer workshops</li>
+						<li>Help defend our planet!</li>
+					</ul>
+				</div>
+				<img src="img/what-we-do.jpg" />
+			</section>
+			<section class="container" id="join_initiatives">
+				<div class="volunteer">
+					<h3>Volunteer Opportunities</h3>
+                    <ul>
+                        <li><p>We offer various volunteer opportunities for Earth Defenders.
+                        </p></li> 
+                        <li><p>Outdoor opportunities: plant trees, collect seeds, nurse saplings, sustainable produce research &amp; development work.
+                        </p></li>
+                        <li><p>Indoor opportunities: event planning, social media, public relations, photography, graphic design, data management, etc.
+                        </p></li>
+                    </ul>
+				</div>
+				<div class="events">
+					<h3>Events &amp; Workshops</h3>
+                    <ul>
+                        <li><p>Online workshops are held for Earth Defenders to obtain the latest news and innovative solutions.</p></li>
+                        <li><p>We also organize indoor and outdoor events so that members can make connections with each other and become more actively involved.</p></li>
+                    </ul>
+				</div>
+				<div class="spon">
+					<h3>Sponsorships &amp; Partnerships</h3>
+                    <ul>
+                        <li><p>We offer valuable sponsorship packages for businesses.</p>
+                        <li><p>Increase your brand’s publicity while helping the environment.
+                        </p></li>
+                        <li><p>We also co-operate with other non-profit organizations and provide free seminars on global warming issues.
+                        </p></li>
+                        <li><p>For further inquiries please contact earthdefenders@gmail.com.
+                        </p></li>
+                    </ul>
+				</div>
+			</section>
+			<div id="joinbg">
+				<form id="joinus" autocomplete="off">
+					<h4 id="formname">Join Earth Defenders</h4>
+					<div class="columnform">
+						<div class="fill">
+							<label for="fname"></label>
+							<input type="text" name="firstname" placeholder="First Name&#42;" required>
+						</div>
+						<div class="fill">
+							<label for="lname"></label>
+							<input type="text" name="lastname" placeholder="Last Name&#42;" required>
+						</div>
+					</div>
+					<div class="fill">
+						<label for="email"></label>
+						<input type="text" name="email" placeholder="Email Address&#42;" required>
+					</div>
+					<div class="columnform">
+						<div class="fill">
+							<label for="region"></label>
+							<input type="text" name="region" placeholder="City/Country of Residence&#42;" required>
+						</div>
+						<div class="fill">
+							<label for="age"></label>
+							<select name="age" required>
+								<option value="" selected disabled hidden>Age Range&#42;</option>
+								<option value="under 12">Under 12 years old</option>
+								<option value="12-18">12-18 years old</option>
+								<option value="19-29">19-29 years old</option>
+								<option value="30-39">30-39 years old</option>
+								<option value="40-49">40-49 years old</option>
+								<option value="50-65">50-65 years old</option>
+								<option value="over 65">Over 65 years old</option>
+							</select>
+						</div>
+					</div>
+					<div class="fill">
+						<label for="education"></label>
+						<input type="text" name="education" placeholder="Highest Education Level/Field of Study&#42;" required>
+					</div>
+					<div class="fill">
+						<label for="occupation"></label>
+						<input type="text" name="occupation" placeholder="Occupation" >
+					</div>
+					<br>
+					<label id="interested" for="Interested areas">Interested Area(s)</label>
+					<div class="interested-areas">
+						<ul>
+							<li>
+								<input type="checkbox" name="user_interest" value="tree-planting">
+								<label class="areas" for="trees">Planting Trees</label>
+							</li>
+							<li>
+								<input type="checkbox" name="user_interest" value="R&D">
+								<label class="areas" for="R&D">Research&#47;Development</label><br>
+							</li>
+							<li>
+								<input type="checkbox" name="user_interest" value="seeds-collecting">
+								<label class="areas" for="seeds">Collecting Seeds</label>
+							</li>
+							<li>
+								<input type="checkbox" name="user_interest" value="saplings-nursery">
+								<label class="areas" for="saplings">Nursing Saplings</label><br>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" name="user_interest" value="event-planning">
+								<label class="areas" for="events">Event Planning</label>
+							</li>
+							<li>
+								<input type="checkbox" name="user_interest" value="public-relation">
+								<label class="areas" for="relations">Public Relations</label>
+							</li>
+							<li>
+								<input type="checkbox" name="user_interest" value="social media">
+								<label class="areas" for="media">Social Media</label>
+							</li>
+							<li>
+								<input type="checkbox" name="user_interest" value="other">
+								<label class="areas" for="other">Other: </label>
+								<input type="textbox" name="other">
+							</li>
+						</ul>
+					</div>
+					<div class="fill">
+						<label></label>
+						<textarea placeholder="Message (optional)"></textarea>
+					</div>
+					<span id="formnote">Note: &#42; means field is mandatory</span>
+					<input id="join_ed" type="submit" />
+				</form>
+			</div>
+			<div class="popup">
+				<div class="popupcontent">
+					<span class="closepop">X</span>
+					<h3>Thanks for joining, <span id="popupfn"></span>!</h3>
+					<p>An email will be sent to you shortly with more information.</p>
+					<div class="logoname">
+						<img class="logo" src="img/earthdefenders_logodark.png"/>
+						<span><strong>EARTH<br>DEFENDERS</strong></span>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="logoname">
+				<img class="logo" src="img/earthdefenders_logo.png" />
+				<span>EARTH<br>DEFENDERS</span>
+			</div>
+			<ul>
+				<li><a href="index.html">About Us</a></li>
+				<li><a href="facts.html">Facts</a></li>
+			</ul>
+			<ul>
+				<li><a href="solutions.html">Solutions</a></li>
+				<li><a href="join.html">Join</a></li>
+			</ul>
+			<ul>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+			<div class="footerright">
+				<span class="followus">Follow us on:</span><br>
+				<a target="_blank" href="https://www.instagram.com/join_earth_defenders/"><img class="smicon" src="img/sm_icons/Instagram_Logo.svg" /></a>
+				<img class="smicon" src="img/sm_icons/Twitter_Logo.svg" /><br>
+				<span class="copyright">Copyright &copy; Earth Defenders 2019</span>
+			</div>
+		</footer>
+	</body>
+</html>

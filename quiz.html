@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Earth Defenders</title>
+		<meta name="author" content="Team Earth Defenders" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" media="screen" href="css/default.css" />
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="js/quiz_js.js"></script>
+		<script type="text/javascript" src="js/all_js.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="logoname" id="lnh">
+				<a href=index.html><img class="logo" src="img/earthdefenders_logo.png" /></a>
+				<a href=index.html><span id="sitename">EARTH<br>DEFENDERS</span></a>
+			</div>
+			<nav>
+				<ul>
+					<a href="facts.html"><li>Facts</li></a>
+					<a href="solutions.html"><li>Solutions</li></a>
+					<a href="join.html"><li>Join</li></a>
+					<a href="shop.html"><li>Shop</li></a>
+					<a class="active" href="quiz.html"><li>Quiz</li></a>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="quizbg">
+				<div id="quizoverlay">
+					<h3>GLOBAL WARMING QUIZ</h3><br>
+					<p id="openq">How much do you know about global warming?</p>
+					<button id="startquiz">START QUIZ</button>
+					<form id="quiz">
+						<h4>Question <span id="questnum"></span></h4>
+						<p id="question"></p>
+						<div id="choiceimg">
+							<ul>
+							</ul>
+							<img />
+						</div>
+						<button type="button" id="nextq">NEXT</button>
+						<button type="button" id="finish">FINISH QUIZ</button>
+					</form>
+					<div id="score">
+						<h3>You scored: <span id="scorenum"></span></h3>
+						<p id="scorecomments"></p>
+					</div>
+					<button type="button" id="replay">REPLAY</button>
+				</div>
+			</div>
+			<div class="popup">
+				<div class="popupcontent">
+					<span class="closepop">X</span>
+					<h3>Please select an option.</h3>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="logoname">
+				<img class="logo" src="img/earthdefenders_logo.png" />
+				<span>EARTH<br>DEFENDERS</span>
+			</div>
+			<ul>
+				<li><a href="index.html">About Us</a></li>
+				<li><a href="facts.html">Facts</a></li>
+			</ul>
+			<ul>
+				<li><a href="solutions.html">Solutions</a></li>
+				<li><a href="join.html">Join</a></li>
+			</ul>
+			<ul>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+			<div class="footerright">
+				<span class="followus">Follow us on:</span><br>
+				<a target="_blank" href="https://www.instagram.com/join_earth_defenders/"><img class="smicon" src="img/sm_icons/Instagram_Logo.svg" /></a>
+				<img class="smicon" src="img/sm_icons/Twitter_Logo.svg" /><br>
+				<span class="copyright">Copyright &copy; Earth Defenders 2019</span>
+			</div>
+		</footer>
+	</body>
+</html>
