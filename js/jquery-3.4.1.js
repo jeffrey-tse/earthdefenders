@@ -139,9 +139,7 @@ function toType( obj ) {
 // Defining this global in .eslintrc.json would create a danger of using the global
 // unguarded in another place, it seems safer to define global only for this module
 
-jQuery.htmlPrefilter = function( html ) {
-		return html;
-	};
+
 
 var
 	version = "3.4.1",
